@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/tesladoc",
-  assetPrefix: "/tesladoc/",
+  basePath: "/tesladocservice",
+  assetPrefix: "/tesladocservice/",
  
 };
 
