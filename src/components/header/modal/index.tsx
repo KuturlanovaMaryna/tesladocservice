@@ -6,6 +6,7 @@ import ViberIcon from "../icons/viber";
 import MapIcon from "../icons/map";
 import MailIcon from "../../footer/icons/mail";
 import InstIcon from "../../footer/icons/inst";
+import TelegramIcon from "../../footer/icons/tg";
 
 interface MobileMenuProps {
   open: boolean;
@@ -29,13 +30,13 @@ const MobileMenu = ({ open, onClose }: MobileMenuProps) => {
 
   return (
     <div className="lg:hidden fixed inset-0 z-50">
-      {/* OVERLAY */}
+     
       <div
         className="absolute inset-0 bg-black/60"
         onClick={onClose}
       />
 
-      {/* MENU */}
+      
       <div
         className="
           absolute top-0 right-0
@@ -52,7 +53,7 @@ const MobileMenu = ({ open, onClose }: MobileMenuProps) => {
         "
         onClick={(e) => e.stopPropagation()}
       >
-        {/* CLOSE BUTTON */}
+       
         <button
           onClick={onClose}
           aria-label="Close menu"
@@ -79,8 +80,10 @@ const MobileMenu = ({ open, onClose }: MobileMenuProps) => {
         <div className="mt-auto flex flex-col gap-5">
           <MapIcon />
           <ViberIcon />
-          <InstIcon/>
-          <MailIcon/>
+          <InstIcon />
+          <MailIcon />
+          <TelegramIcon />
+
   </div>
       </div>
     </div>

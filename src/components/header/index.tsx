@@ -14,23 +14,22 @@ const Header = () => {
   return (
     <header className="font-manrope">
 
-      {/* ===== MOBILE / TABLET TOP BAR (sm + md) ===== */}
+   
       <div
         className="
           lg:hidden
           bg-darkbcg
           flex items-center justify-between
 
-          px-4 py-3          /* sm */
-          md:px-8 md:py-4    /* md */
+          px-4 py-3          
+          md:px-8 md:py-4    
         "
       >
-        {/* Phone */}
         <a href="tel:+37379438254" className="text-white w-6 h-6 md:w-6 md:h-6">
           <TelefonIcon />
         </a>
 
-        {/* Logo */}
+       
         <div className="flex items-center gap-2">
           <div className="text-white w-6 h-6">
             <TeslaIcon />
@@ -40,7 +39,7 @@ const Header = () => {
           </span>
         </div>
 
-        {/* Burger */}
+        
         <button
   onClick={() => setOpen(true)}
   className="text-white w-6 h-6"
@@ -53,7 +52,7 @@ const Header = () => {
       </div>
 
     
-      {/* ===== DESKTOP TOP INFO BAR (lg) ===== */}
+      
       <div className="hidden lg:block bg-darkbcg rounded-b-2xl px-[120px] py-4 h-[58px]">
         <div className="max-w-[1200px] mx-auto flex justify-evenly">
           <span className="flex gap-2">
@@ -92,9 +91,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* ===== DESKTOP MAIN HEADER (lg) ===== */}
+      
       <div className="hidden lg:flex max-w-[1440px] mx-auto h-[102px] px-[120px] py-6 justify-between">
-        {/* Logo */}
+    
         <div className="flex gap-2 items-center">
           <div className="text-darktext w-8 h-8">
             <TeslaIcon />
@@ -104,7 +103,7 @@ const Header = () => {
           </p>
         </div>
 
-        {/* Nav */}
+      
         <ul className="flex gap-4 items-center font-semibold text-lg">
           <li><a href="#about" className="hover:text-red">О нас</a></li>
           <li><a href="#services" className="hover:text-red">Наши услуги</a></li>
@@ -114,7 +113,7 @@ const Header = () => {
           <li><a href="#location" className="hover:text-red">Как нас найти</a></li>
         </ul>
 
-        {/* CTA */}
+    
         <a
           href="tel:+37379438254"
           className="w-[200px] h-[54px] px-[26px] py-4 rounded-2xl bg-red font-bold text-white text-center"
