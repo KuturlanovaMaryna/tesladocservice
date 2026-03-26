@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/tesladocservice",
-  assetPrefix: "/tesladocservice/",
+  reactStrictMode: true,
 };
 
 export default nextConfig;
