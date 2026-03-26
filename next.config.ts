@@ -1,5 +1,8 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  basePath: "/tesladocservice",
+  assetPrefix: "/tesladocservice/",
+};
 
 export default nextConfig;
