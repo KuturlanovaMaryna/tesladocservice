@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <Services />
       <Steps />
-      {/* <Feedback/> */}
+      <Feedback/>
       <Reviews />
       <Location />
       <Footer/>
